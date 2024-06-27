@@ -2,27 +2,52 @@
 <html lang="id">
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
             Sunny Side
         </title>
         <link rel="stylesheet" href="style.css" /> 
+        <script src="script.js"></script>
     </head>    
     <body>
         <header>
             <div class="logo-sunnyside">
                 <img src="./assets/images/logo.svg" alt="logo-sunnyside"/>
             </div>
+
+            
+            <!-- Hamburger menu -->
             <nav>
+                <div class="topnav">
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <img src="assets/images/icon-hamburger.svg" />
+                    </a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="#">About</a>
+                        <a href="#">Service</a>
+                        <a href="#">Projects</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- full page -->
+            <nav class="nav-button">
                 <a href="#">About</a>
                 <a href="#">Service</a>
                 <a href="#">Projects</a>
                 <a href="#">Contact</a>
             </nav>
+
+
         </header>
         <content>
             <div class="container-header">
                 <div class="header-text">
                     <p>WE ARE CREATIVES</p>
+                    <img src="./assets/images/icon-arrow-down.svg" alt="arrow-down"/>
                 </div>
                 <img src="./assets/images/desktop/image-header.jpg" alt="image-header"/>
             </div>
@@ -34,11 +59,11 @@
                         <p>We are full-service creative agency specializing in helping brands grow fast. 
                             Engage your clients through compelling cisuals that do most of the marketing for you.
                         </p>
-                        <a href="#" style="color:black; text-decoration: none; border-bottom: solid hsl(51, 100%, 49%);">LEARN MORE</a>      
+                        <a href="#" id="learnmore1">LEARN MORE</a>      
                     </div>
                 </div>
-                <img src="./assets/images/desktop/image-transform.jpg" alt="image-transform"/>
-                <img src="./assets/images/desktop/image-stand-out.jpg" alt="image-stand-out"/>
+                <img src="./assets/images/desktop/image-transform.jpg" alt="transform"/>
+                <img src="./assets/images/desktop/image-stand-out.jpg" alt="stand-out"/>
                 <div class="main-text">
                     <div>
                         <h1>Stand out to the right audience</h1>
@@ -46,10 +71,11 @@
                             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
                             we'll build and extend your brand iin digital places.
                         </p>
-                        <a href="#" style="color:black; text-decoration: none; border-bottom: solid hsl(7, 99%, 70%);">LEARN MORE</a>
+                        <a href="#" id="learnmore2">LEARN MORE</a>
                     </div>
                 </div>
-                <div class="main-text-caption" style="background-size: 100%; background-image: url(assets/images/desktop/image-graphic-design.jpg);">
+                <div class="main-text-caption">
+                    <img src="./assets/images/desktop/image-graphic-design.jpg" alt="graphic-design" />
                     <div class="captions">
                         <h1>Graphic Design</h1>
                         <p>Great Design makes you memorable. We deliver
@@ -58,7 +84,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="main-text-caption" style="background-size: 100%; background-image: url(assets/images/desktop/image-photography.jpg);">
+                <div class="main-text-caption">
+                    <img src="./assets/images/desktop/image-photography.jpg" alt="photography"/>
                     <div class="captions">
                         <h1>Photography</h1>
                         <p>Increase your credibility by getting the most stunning,
@@ -140,6 +167,8 @@
         </footer>
 
     </body>
+
+
     
 
 </html>
